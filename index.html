@@ -11,7 +11,7 @@
   <!-- Top Navbar -->
   <header class="topbar">
     <div class="left">
-      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <button class="menu-btn" onclick="toggleSidebar()" aria-controls="sidebar" aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
     <div class="right">
       <a href="#" class="account">👤</a>
@@ -23,6 +23,7 @@
 
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="closeSidebar()" aria-label="Close menu">✕</button>
       <nav>
         <a href="#">Dashboard</a>
         <a href="#">Projects</a>
@@ -45,6 +46,8 @@
     </main>
 
   </div>
+
+  <div id="overlay" class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
   <!-- Footer -->
   <footer class="footer">
