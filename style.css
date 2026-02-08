@@ -36,10 +36,22 @@ html { scroll-behavior: smooth; }
 
 /* Sidebar */
 .sidebar {
-  width: 220px;
+  width: 260px;
   background: #1e1e1e;
   padding: 20px 0;
   transition: transform 0.3s ease;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  transform: translateX(-100%);
+  z-index: 1000;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+  padding-top: 10px;
+}
+
+.sidebar.active {
+  transform: translateX(0);
 }
 
 .sidebar .close-btn {
@@ -62,6 +74,27 @@ html { scroll-behavior: smooth; }
 .sidebar nav a:hover {
   background: #333;
   color: #fff;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 900;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
 }
 
 /* Main Content */
@@ -193,48 +226,6 @@ html { scroll-behavior: smooth; }
 
 /* Mobile */
 @media (max-width: 768px) {
-  /* Stack layout */
-  .container {
-    flex-direction: column;
-  }
-
-  /* Off-canvas sidebar */
-  .sidebar {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    transform: translateX(-100%);
-    width: 260px;
-    z-index: 1000;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.3);
-    padding-top: 10px;
-  }
-
-  .sidebar.active {
-    transform: translateX(0);
-  }
-
-  .sidebar .close-btn {
-    display: block;
-  }
-
-  /* Overlay shown when sidebar open */
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 900;
-  }
-
-  .overlay.active {
-    display: block;
-  }
-
   .menu-btn {
     font-size: 26px;
     padding: 6px 8px;
@@ -257,7 +248,6 @@ html { scroll-behavior: smooth; }
 /* Small screens adjustments */
 @media (max-width: 420px) {
   .menu-btn { font-size: 28px; }
-  .account { font-size: 16px; }
   .content { padding: 12px; }
   .content h1 { font-size: 20px; }
 }
