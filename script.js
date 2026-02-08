@@ -39,4 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeSidebar();
   });
+
+  // Accordion behavior for lessons page
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btn.classList.toggle('active');
+      const panel = btn.nextElementSibling;
+      if (!panel) return;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
 });

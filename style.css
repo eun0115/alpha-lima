@@ -87,6 +87,31 @@ html { scroll-behavior: smooth; }
   border-radius: 5px;
 }
 
+/* Accordion / dropdown for lessons */
+.accordion {
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: background 0.15s ease;
+  border-bottom: 1px solid #eee;
+}
+.accordion:hover { background: #f6f6f6; }
+.accordion.active { background: #eef0f2; }
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: #fff;
+  padding: 0 16px;
+}
+.panel p { padding: 12px 0; margin: 0; }
+
 /* Footer */
 .footer {
   height: 40px;
