@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="topbar">
+    <div class="left">
+      <button class="menu-btn" onclick="toggleSidebar()" aria-controls="sidebar" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="closeSidebar()" aria-label="Close menu">✕</button>
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="members.html">Members</a>
+        <a href="checklist.html">Checklist</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Checklist</h1>
+
+      <section id="checklist" class="section">
+        <p>Track your progress with this checklist.</p>
+      </section>
+
+      <div class="content-block">
+        <button class="accordion">BATD</button>
+        <div class="panel">
+          <div class="checklist-item">
+            <input type="checkbox" id="batd-item1" class="checklist-checkbox">
+            <label for="batd-item1">Item 1</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="batd-item2" class="checklist-checkbox">
+            <label for="batd-item2">Item 2</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="batd-item3" class="checklist-checkbox">
+            <label for="batd-item3">Item 3</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="batd-item4" class="checklist-checkbox">
+            <label for="batd-item4">Item 4</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="batd-item5" class="checklist-checkbox">
+            <label for="batd-item5">Item 5</label>
+          </div>
+        </div>
+
+        <button class="accordion">RB</button>
+        <div class="panel">
+          <div class="checklist-item">
+            <input type="checkbox" id="rb-item1" class="checklist-checkbox">
+            <label for="rb-item1">Item 1</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="rb-item2" class="checklist-checkbox">
+            <label for="rb-item2">Item 2</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="rb-item3" class="checklist-checkbox">
+            <label for="rb-item3">Item 3</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="rb-item4" class="checklist-checkbox">
+            <label for="rb-item4">Item 4</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="rb-item5" class="checklist-checkbox">
+            <label for="rb-item5">Item 5</label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <div id="overlay" class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Copyright ©2026; Designed by eun0115</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

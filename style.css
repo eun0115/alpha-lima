@@ -157,6 +157,30 @@ html { scroll-behavior: smooth; }
   max-height: 200px;
 }
 
+/* Checklist styles */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.checklist-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.checklist-item label {
+  flex: 1;
+  font-size: 15px;
+  color: #111;
+  cursor: pointer;
+}
+.checklist-item input:checked + label {
+  color: #999;
+  text-decoration: line-through;
+}
+
 /* Footer */
 .footer {
   height: 40px;
