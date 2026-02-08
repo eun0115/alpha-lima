@@ -55,3 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Toggle member details on click
+function toggleMemberDetails(element) {
+  const details = element.querySelector('.member-details');
+  if (!details) return;
+  details.classList.toggle('show');
+}
