@@ -330,7 +330,7 @@ html { scroll-behavior: smooth; }
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .footer-content {
     gap: 20px;
   }
@@ -341,7 +341,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .menu-btn {
     font-size: 26px;
     padding: 6px 8px;
@@ -362,7 +362,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* Small screens adjustments */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .menu-btn { font-size: 28px; }
   .content { padding: 12px; }
   .content h1 { font-size: 20px; }
@@ -552,7 +552,8 @@ html { scroll-behavior: smooth; }
   }
 }
 
-@media (min-width: 1200px) {
+
+@media (max-width: 290px) {
   html {
     font-size: 20px;
   }
@@ -604,7 +605,7 @@ html { scroll-behavior: smooth; }
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   .boxing-layout {
     flex-direction: column;
