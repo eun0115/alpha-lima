@@ -551,3 +551,17 @@ html { scroll-behavior: smooth; }
     font-size: 12px;
   }
 }
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+
+  .stat-card h2 {
+    font-size: 30px;
+  }
+
+  .panel p, .accordion {
+    font-size: 20px;
+  }
+}
