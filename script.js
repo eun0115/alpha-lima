@@ -74,4 +74,3 @@ button.addEventListener("click", function () {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 });
-
