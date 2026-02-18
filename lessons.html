@@ -22,7 +22,7 @@
     <aside class="sidebar" id="sidebar">
       <button class="close-btn" onclick="closeSidebar()" aria-label="Close menu">✕</button>
       <nav>
-        <a href="index.html#home">Home</a>
+        <a href="index.html">Home</a>
         <a href="lessons.html">Lessons</a>
       </nav>
     </aside>
@@ -69,12 +69,39 @@
           <p>Your altimeter and vertical speed indicator must correspond to either your level, climbing, and descending turn.</p>
           <p>Your heading indicator must rotate to your specified "next heading" from your "present heading".</p>
           <p>Lastly, your turn coordinator should be wings at turn index, ball center to maintain a coordinated turn; this will prove crucial in a future lesson.</p>
-          <table style="border-collapse: collapse; width: 100%; margin: 10px 0;">
-            <tr><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Type of Turn</th><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Heading Change</th><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Bank Angle</th><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Recovery Heading</th></tr>
-            <tr><td style="border: 1px solid #ddd; padding: 8px;">Shallow</td><td style="border: 1px solid #ddd; padding: 8px;">90°</td><td style="border: 1px solid #ddd; padding: 8px;">10°</td><td style="border: 1px solid #ddd; padding: 8px;">5</td></tr>
-            <tr><td style="border: 1px solid #ddd; padding: 8px;">Medium</td><td style="border: 1px solid #ddd; padding: 8px;">180°</td><td style="border: 1px solid #ddd; padding: 8px;">20°</td><td style="border: 1px solid #ddd; padding: 8px;">10</td></tr>
-            <tr><td style="border: 1px solid #ddd; padding: 8px;">Steep</td><td style="border: 1px solid #ddd; padding: 8px;">360°</td><td style="border: 1px solid #ddd; padding: 8px;">30°</td><td style="border: 1px solid #ddd; padding: 8px;">15</td></tr>
-          </table>
+<!-- Responsive Table Container -->
+<div class="table-container">
+  <table class="responsive-table">
+    <thead>
+      <tr>
+        <th>Type of Turn</th>
+        <th>Heading Change</th>
+        <th>Bank Angle</th>
+        <th>Recovery Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Shallow</td>
+        <td>90°</td>
+        <td>10°</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>180°</td>
+        <td>20°</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Steep</td>
+        <td>360°</td>
+        <td>30°</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           <p>When solving for your recovery heading, always ADD when going to the LEFT, and SUBTRACT when going to the RIGHT. In accomplishing a coordinated turn, the ball on the turn coordinator must always be centered; do this through the use of rudder.</p>
           <p><strong>Situation:</strong> Altitude of 3000 feet, at heading 090°.</p>
           <p><strong>Instructor:</strong> Make a shallow turn to the right.</p>

@@ -545,3 +545,44 @@ body.dark .lesson-number {
     min-width: 280px;
   }
 }
+
+/* Table Container */
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* center table */
+  margin: 20px 0;
+}
+
+/* Responsive Table */
+.responsive-table {
+  width: 100%;
+  max-width: 600px; /* optional max width */
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+  word-wrap: break-word; /* allows long text to wrap */
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.responsive-table tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
