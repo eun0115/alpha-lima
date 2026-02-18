@@ -195,7 +195,7 @@ html { scroll-behavior: smooth; }
 
 /* When open */
 .panel.open {
-  padding: 20px;
+  padding: 50px;
 }
 
 .panel p { padding: 12px 0; margin: 0; }
@@ -564,4 +564,42 @@ html { scroll-behavior: smooth; }
   .panel p, .accordion {
     font-size: 20px;
   }
+}
+
+.boxing-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.boxing-menu {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boxing-tab {
+  padding: 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.boxing-tab.active {
+  background: #111;
+  color: #fff;
+}
+
+.boxing-content {
+  flex: 1;
+}
+
+.boxing-panel {
+  display: none;
+}
+
+.boxing-panel.active {
+  display: block;
 }

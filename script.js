@@ -40,6 +40,35 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.key === 'Escape') closeSidebar();
   });
 
+  // Side tab behavior
+document.querySelectorAll('.boxing-tab').forEach(tab => {
+  tab.addEventListener('click', function () {
+
+    const wrapper = this.closest('.boxing-layout');
+
+    // Remove active from tabs
+    wrapper.querySelectorAll('.boxing-tab')
+      .forEach(t => t.classList.remove('active'));
+
+    // Remove active from panels
+    wrapper.querySelectorAll('.boxing-panel')
+      .forEach(p => p.classList.remove('active'));
+
+    // Activate clicked tab
+    this.classList.add('active');
+
+    // Show correct panel
+    const target = this.dataset.target;
+    wrapper.querySelector('#' + target).classList.add('active');
+
+    // Recalculate accordion height
+    const parentPanel = wrapper.closest('.panel');
+    if (parentPanel && parentPanel.style.maxHeight) {
+      parentPanel.style.maxHeight = parentPanel.scrollHeight + "px";
+    }
+  });
+});
+
   // Accordion behavior for lessons page
   const accordions = document.querySelectorAll('.accordion');
   accordions.forEach(function(btn) {

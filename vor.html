@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Lima | VOR Proceedures</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="topbar">
+    <div class="left">
+      <button class="menu-btn" onclick="toggleSidebar()" aria-controls="sidebar" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="closeSidebar()" aria-label="Close menu">✕</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="vor.html">VOR Proceedures</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+<section class="page-header">
+  <h1>VOR Proceedures</h1>
+  <p>Master VOR navigation techniques. Expand lessons below for detailed procedures</p>
+</section>
+      <div class="content-block">
+        <button class="accordion"> <span class="lesson-number">01</span>Homing</button>
+        <div class="panel">
+        <ol>
+        <li>Twist OBS until TO indication with CDI centered.</li>
+        <li>With CDI centered, head the course.</li>
+        <li>If CDI deflects, re-center the CDI.</li>
+        <li>Fly the homing heading until reaching the station.</li>
+        </ol>
+        </div>
+        <button class="accordion"> <span class="lesson-number">02</span>Determining Line of Position</button>
+        <div class="panel">
+        <ol>
+        <li>Twist OBS to center CDI.</li>
+        <li>Check TO-FROM indication.</li>
+        <li>If TO indication, the reciprocal course index is the LOP.</li>
+        <li>If FROM indication, the course index is the LOP.</li>
+        </ol>
+        </div>
+<button class="accordion"><span class="lesson-number">03</span>Basic Interception</button>
+<div class="panel">
+  <div class="boxing-layout">
+    <!-- Side Menu -->
+    <div class="boxing-menu">
+      <button class="boxing-tab active" data-target="inbound">Inbound</button>
+      <button class="boxing-tab" data-target="outbound">Outbound</button>
+    </div>
+    <!-- Content Area -->
+    <div class="boxing-content">
+      <div id="inbound" class="boxing-panel active">
+        <ol>
+        <li>Determine the radial to be intercepted by checking the LOP and desired radial.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index and confirm if TO indication.</li>
+        <li>Intercept radial by using 30°, 60° and 90° of your course. ("+" right CDI deflection, "-" if left)</li>
+        <li>CDI active, fly the course.</li>        </ol>
+      </div>
+      <div id="outbound" class="boxing-panel">
+        <ol>
+        <li>Determine the radial to be intercepted by checking the LOP and desired radial.</li>
+        <li>Twist proper OBS, set the desired radial to the course index and confirm if FROM indication.</li>
+        <li>Intercept radial by using 30°, 45° and 60° of your course. ("+" right CDI deflection, "-" if left)</li>
+        <li>CDI active, fly the course.</li>        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="accordion"><span class="lesson-number">04</span> Boxing</button>
+<div class="panel">
+  <div class="boxing-layout">
+    <!-- Side Menu -->
+    <div class="boxing-menu">
+      <button class="boxing-tab active" data-target="inbound">Inbound</button>
+      <button class="boxing-tab" data-target="outbound">Outbound</button>
+    </div>
+    <!-- Content Area -->
+    <div class="boxing-content">
+      <div id="inbound" class="boxing-panel active">
+        <ol>
+          <li>Determine the radial to be intercepted.</li>
+          <li>Twist proper OBS and confirm FROM.</li>
+          <li>Fly parallel and wait for change flag.</li>
+          <li>Change flag, time for 2 minutes.</li>
+          <li>Change flag, Proceed to basic interception.</li>
+        </ol>
+      </div>
+      <div id="outbound" class="boxing-panel">
+        <ol>
+          <li>Determine the radial to be intercepted.</li>
+          <li>Twist proper OBS and confirm TO.</li>
+          <li>Fly parallel and wait for change flag.</li>
+          <li>Proceed to basic interception.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+        <button class="accordion"> <span class="lesson-number">05</span>Procedural Turn</button>
+        <div class="panel">
+        <ol>
+        <li>Head 45° left/right of present course.</li>
+        <li>On the heading, time for 45 second.</li>
+        <li>Twist OBS to the reciprocal of present course.</li>
+        <li>End time, turn opposite of initial turn and interceptradial.</li>
+        </ol>
+        </div>
+<button class="accordion"><span class="lesson-number">06</span>DME Arc</button>
+<div class="panel">
+  <div class="boxing-layout">
+    <!-- Side Menu -->
+    <div class="boxing-menu">
+      <button class="boxing-tab active" data-target="left">Left</button>
+      <button class="boxing-tab" data-target="right">Right</button>
+    </div>
+    <!-- Content Area -->
+    <div class="boxing-content">
+      <div id="left" class="boxing-panel active">
+        <p>Commence at 10% of your airspeed + DME to hold<br>
+        (10% GS + DME)</p>
+        <ol>
+        <li>Twist OBS -10° of present course.</li>
+        <li>Head +90° of the course.</li>
+        <li>Center CDI, twist OBS -10°.</li>
+        <li>Turn -10° of heading.</li>   
+        <li>Repeat steps 3 and 4 until intercept inbound ofdesired radial.</li>     
+      </ol>
+      </div>
+      <div id="right" class="boxing-panel">
+        <p>Commence at 10% of your airspeed + DME to hold<br>
+        (10% GS + DME)</p>
+        <ol>
+        <li>Twist OBS +10° of present course.</li>
+        <li>Head -90° of the course.</li>
+        <li>Center CDI, twist OBS +10°.</li>
+        <li>Turn +10° of heading.</li>   
+        <li>Repeat steps 3 and 4 until intercept inbound ofdesired radial.</li>     
+      </ol>
+      </div>
+    </div>
+  </div>
+</div>
+        <button class="accordion"> <span class="lesson-number">07</span>Time to Station</button>
+        <div class="panel">
+        <ol>
+        <li>Twist OBS +/-10° of present course</li>
+        <li>Intercept using 90° of the course.</li>
+        <li>CDI center, start time.</li>
+        <li>Twist OBS +/-10°</li>
+        <li>CDI center, end time.</li>
+        <li>Home to station.</li>
+        <li>Computation (10 seconds = 1 minute to the station)</li>
+        </ol>
+        </div>
+<button class="accordion"><span class="lesson-number">08</span>Standard Holding Pattern</button>
+<div class="panel">
+  <div class="boxing-layout">
+    <!-- Side Menu -->
+    <div class="boxing-menu">
+      <button class="boxing-tab active" data-target="direct">Direct Entry</button>
+      <button class="boxing-tab" data-target="offset">Off-set Entry</button>
+      <button class="boxing-tab" data-target="parallel">Parallel Entry</button>
+    </div>
+    <!-- Content Area -->
+    <div class="boxing-content">
+      <div id="direct" class="boxing-panel active">
+        <ol>
+        <li>Over the fix, turn RIGHT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time, turn RIGHT to intercept holding radial.</li>
+        </ol>
+      </div>
+      <div id="offset" class="boxing-panel">
+        <ol>
+        <li>Over the fix, head -30° of the holding radial.</li>
+        <li>On the heading, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time turn RIGHT to intercept holding radial.</li>   
+        <li>Change flag, turn RIGHT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>End time, turn RIGHT to intercept holding radial.</li>     
+      </ol>
+      </div>
+      <div id="parallel" class="boxing-panel">
+        <ol>
+        <li>Over the fix, turn LEFT head the holding radial.</li>
+        <li>On the heading, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time, turn LEFT to intercept holding radial.</li>   
+        <li>Change flag, turn RIGHT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>End time, turn RIGHT to intercept holding radial.</li>     
+      </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="accordion"><span class="lesson-number">09</span>Non-Standard Holding Pattern</button>
+<div class="panel">
+  <div class="boxing-layout">
+    <!-- Side Menu -->
+    <div class="boxing-menu">
+      <button class="boxing-tab active" data-target="direct">Direct Entry</button>
+      <button class="boxing-tab" data-target="offset">Off-set Entry</button>
+      <button class="boxing-tab" data-target="parallel">Parallel Entry</button>
+    </div>
+    <!-- Content Area -->
+    <div class="boxing-content">
+      <div id="direct" class="boxing-panel active">
+        <ol>
+        <li>Over the fix, turn LEFT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time, turn LEFT to intercept holding radial.</li>
+        </ol>
+      </div>
+      <div id="offset" class="boxing-panel">
+        <ol>
+        <li>Over the fix, head +30° of the holding radial.</li>
+        <li>On the heading, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time turn LEFT to intercept holding radial.</li>   
+        <li>Change flag, turn LEFT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>End time, turn LEFT to intercept holding radial.</li>     
+      </ol>
+      </div>
+      <div id="parallel" class="boxing-panel">
+        <ol>
+        <li>Over the fix, turn RIGHT head the holding radial.</li>
+        <li>On the heading, time for 1 minute.</li>
+        <li>Twist proper OBS, set the desired radial to the reciprocal course index.</li>
+        <li>End time, turn RIGHT to intercept holding radial.</li>   
+        <li>Change flag, turn LEFT and head the holding radial.</li>
+        <li>Wait for change flag.</li>
+        <li>Change flag, time for 1 minute.</li>
+        <li>End time, turn LEFT to intercept holding radial.</li>     
+      </ol>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+  </div>
+
+  <div id="overlay" class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+        </ul>
+      </div>
+<div class="footer-section">
+  <h3>Contact Us</h3>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gianpaoloestacio5@gmail.com" target="_blank" rel="noopener">
+    Send an Email
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright ©2026; Designed by eun0115</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
