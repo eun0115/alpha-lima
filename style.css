@@ -572,7 +572,7 @@ html { scroll-behavior: smooth; }
 }
 
 .boxing-menu {
-  min-width: 150px;
+  min-width: 0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -584,7 +584,7 @@ html { scroll-behavior: smooth; }
   background: #eee;
   cursor: pointer;
   border-radius: 4px;
-  text-align: left;
+  text-align: center;
 }
 
 .boxing-tab.active {
@@ -602,4 +602,22 @@ html { scroll-behavior: smooth; }
 
 .boxing-panel.active {
   display: block;
+}
+
+@media (max-width: 768px) {
+
+  .boxing-layout {
+    flex-direction: column;
+  }
+
+  .boxing-menu {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .boxing-tab {
+    flex: 1;
+    text-align: center;
+  }
+
 }
