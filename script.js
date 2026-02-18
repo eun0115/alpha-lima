@@ -62,3 +62,16 @@ function toggleMemberDetails(element) {
   if (!details) return;
   details.classList.toggle('show');
 }
+button.addEventListener("click", function () {
+  const panel = this.nextElementSibling;
+
+  this.classList.toggle("active");
+  panel.classList.toggle("open");
+
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+});
+

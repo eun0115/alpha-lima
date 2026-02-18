@@ -121,29 +121,90 @@ html { scroll-behavior: smooth; }
 }
 
 /* Accordion / dropdown for lessons */
+/* Normal Accordion */
 .accordion {
   background: #fff;
-  color: #111;
+  color: #111; /* default text color */
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 16px 18px;
   width: 100%;
   border: none;
-  text-align: left;
-  outline: none;
   font-size: 16px;
-  transition: background 0.15s ease;
-  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  
+  display: flex;
+  align-items: center;
 }
-.accordion:hover { background: #f6f6f6; }
-.accordion.active { background: #eef0f2; }
+
+/* Hover effect */
+.accordion:hover {
+  background: #f0f0f0; /* lighter background */
+  color: #111; /* text stays readable */
+  transform: translateY(-1px);
+}
+
+/* Active (open) accordion */
+.accordion.active {
+  background: #111;
+  color: #fff; /* text is white when active */
+}
+
+/* Optional: active + hover */
+.accordion.active:hover {
+  background: #222; /* slightly lighter when hovering active */
+  color: #fff; /* text stays white */
+}
+.accordion-icon {
+  transition: transform 0.3s ease;
+  font-size: 14px;
+}
+
+/* Rotate arrow when active */
+.accordion.active .accordion-icon {
+  transform: rotate(90deg);
+}
+
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.35s ease, padding 0.25s ease;
   background: #fff;
-  padding: 0 16px;
+  padding: 0 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
+
+.panel p,
+.panel ul,
+.panel ol {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.panel ul,
+.panel ol {
+  padding-left: 20px;
+}
+
+/* When open */
+.panel.open {
+  padding: 20px;
+}
+
 .panel p { padding: 12px 0; margin: 0; }
+body.dark .accordion {
+  background: #1f1f1f;
+  color: #ddd;
+}
+
+body.dark .accordion.active {
+  background: #333;
+  color: #fff;
+}
+
 
 /* Member card with avatar and details */
 .member-card {
@@ -405,4 +466,42 @@ body.dark .stat-card,
 body.dark .update-card {
   background: #1f1f1f;
   color: #ddd;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 15px;
+  max-width: 700px;
+}
+
+body.dark .page-header p {
+  color: #aaa;
+}
+
+body.dark .panel {
+  background: #1a1a1a;
+  color: #ddd;
+}
+
+.lesson-number {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+body.dark .lesson-number {
+  background: #444;
 }
