@@ -199,16 +199,6 @@ html { scroll-behavior: smooth; }
 }
 
 .panel p { padding: 12px 0; margin: 0; }
-body.dark .accordion {
-  background: #1f1f1f;
-  color: #ddd;
-}
-
-body.dark .accordion.active {
-  background: #333;
-  color: #fff;
-}
-
 
 /* Member card with avatar and details */
 .member-card {
@@ -460,16 +450,6 @@ body.dark .accordion.active {
   margin-bottom: 5px;
 }
 
-body.dark .hero {
-  background: linear-gradient(135deg, #121212, #1e1e1e);
-}
-
-body.dark .stat-card,
-body.dark .update-card {
-  background: #1f1f1f;
-  color: #ddd;
-}
-
 .page-header {
   margin-bottom: 30px;
 }
@@ -485,15 +465,6 @@ body.dark .update-card {
   max-width: 700px;
 }
 
-body.dark .page-header p {
-  color: #aaa;
-}
-
-body.dark .panel {
-  background: #1a1a1a;
-  color: #ddd;
-}
-
 .lesson-number {
   display: inline-block;
   background: #111;
@@ -502,10 +473,6 @@ body.dark .panel {
   padding: 4px 8px;
   border-radius: 4px;
   margin-right: 10px;
-}
-
-body.dark .lesson-number {
-  background: #444;
 }
 
 .content img {
